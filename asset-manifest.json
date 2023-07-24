@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fashion-studio/static/css/main.55eb493e.css",
-    "main.js": "/fashion-studio/static/js/main.d7b796d5.js",
+    "main.js": "/fashion-studio/static/js/main.fd174c9e.js",
     "static/media/video.mp4": "/fashion-studio/static/media/video.3e396b6d837d0a1e8fb6.mp4",
     "static/media/kaushan-script-all-400-normal.woff": "/fashion-studio/static/media/kaushan-script-all-400-normal.ba623d1ca520a2a711d2.woff",
     "static/media/sirin-stencil-all-400-normal.woff": "/fashion-studio/static/media/sirin-stencil-all-400-normal.e1b8add18154b5d65682.woff",
@@ -10,10 +10,10 @@
     "static/media/kaushan-script-latin-ext-400-normal.woff2": "/fashion-studio/static/media/kaushan-script-latin-ext-400-normal.5a05e21384fe4b1b9db7.woff2",
     "index.html": "/fashion-studio/index.html",
     "main.55eb493e.css.map": "/fashion-studio/static/css/main.55eb493e.css.map",
-    "main.d7b796d5.js.map": "/fashion-studio/static/js/main.d7b796d5.js.map"
+    "main.fd174c9e.js.map": "/fashion-studio/static/js/main.fd174c9e.js.map"
   },
   "entrypoints": [
     "static/css/main.55eb493e.css",
-    "static/js/main.d7b796d5.js"
+    "static/js/main.fd174c9e.js"
   ]
 }
