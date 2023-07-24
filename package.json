@@ -12,6 +12,7 @@
     "framer-motion": "^6.2.8",
     "gsap": "^3.9.1",
     "locomotive-scroll": "^4.1.4",
+    "memfs": "^4.2.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-locomotive-scroll": "^0.2.0",
