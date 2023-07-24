@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const VideoContainer = styled.section`
   width: 100%;
@@ -21,4 +22,38 @@ export const DarkOverlay = styled.div`
   z-index: 5;
 
   background-color: ${props => `rgba(${props.theme.bodyRgba}, 0.6)`};
+`;
+
+export const HomeTitle = styled(motion.div)`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: ${props => props.theme.text};
+
+  div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h1 {
+    font-family: 'Kaushan Script';
+    font-size: ${props => props.theme.fontBig};
+    text-shadow: 1px 1px 1px ${props => props.theme.body};
+  }
+
+  h2 {
+    font-family: 'Sirin Stencil';
+    font-size: ${props => props.theme.fontlg};
+    text-shadow: 1px 1px 1px ${props => props.theme.body};
+    font-weight: 300;
+    text-transform: capitalize;
+  }
 `;
