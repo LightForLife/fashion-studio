@@ -32,8 +32,20 @@ const About = () => {
       </Left>
       <Right>
         <img src={img1} alt="About Us" />
-        <img className="small-img-1" src={img2} alt="About Us" />
-        <img src={img3} alt="About Us" className="small-img-2" />
+        <img
+          data-scroll
+          data-scroll-speed="5"
+          src={img2}
+          alt="About Us"
+          className="small-img-1"
+        />
+        <img
+          data-scroll
+          data-scroll-speed="-2"
+          src={img3}
+          alt="About Us"
+          className="small-img-2"
+        />
       </Right>
     </AboutSection>
   );
