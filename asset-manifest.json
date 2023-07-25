@@ -1,11 +1,18 @@
 {
   "files": {
     "main.css": "/fashion-studio/static/css/main.55eb493e.css",
-    "main.js": "/fashion-studio/static/js/main.c1229e93.js",
+    "main.js": "/fashion-studio/static/js/main.d0cc0680.js",
     "static/media/video.mp4": "/fashion-studio/static/media/video.3e396b6d837d0a1e8fb6.mp4",
+    "static/media/10.webp": "/fashion-studio/static/media/10.9d55ebaf49e2a1566285.webp",
+    "static/media/4.webp": "/fashion-studio/static/media/4.de6233805d060fa97921.webp",
     "static/media/2.webp": "/fashion-studio/static/media/2.574104ad442c095a5bbe.webp",
+    "static/media/6.webp": "/fashion-studio/static/media/6.4c1d4b9f18cf30ffbb05.webp",
+    "static/media/5.webp": "/fashion-studio/static/media/5.85cb009545eed102084c.webp",
     "static/media/3.webp": "/fashion-studio/static/media/3.72b96ccc924a0b0d614d.webp",
+    "static/media/7.webp": "/fashion-studio/static/media/7.cf43e4b0061d50fd7eb0.webp",
     "static/media/1.webp": "/fashion-studio/static/media/1.378e463bfefafe30c0cb.webp",
+    "static/media/9.webp": "/fashion-studio/static/media/9.37a06fbc71748d3b98fd.webp",
+    "static/media/8.webp": "/fashion-studio/static/media/8.1823cf7361aca9c5ed08.webp",
     "static/media/kaushan-script-all-400-normal.woff": "/fashion-studio/static/media/kaushan-script-all-400-normal.ba623d1ca520a2a711d2.woff",
     "static/media/sirin-stencil-all-400-normal.woff": "/fashion-studio/static/media/sirin-stencil-all-400-normal.e1b8add18154b5d65682.woff",
     "static/media/kaushan-script-latin-400-normal.woff2": "/fashion-studio/static/media/kaushan-script-latin-400-normal.2855d49bba6b2cb7bec5.woff2",
@@ -13,10 +20,10 @@
     "static/media/kaushan-script-latin-ext-400-normal.woff2": "/fashion-studio/static/media/kaushan-script-latin-ext-400-normal.5a05e21384fe4b1b9db7.woff2",
     "index.html": "/fashion-studio/index.html",
     "main.55eb493e.css.map": "/fashion-studio/static/css/main.55eb493e.css.map",
-    "main.c1229e93.js.map": "/fashion-studio/static/js/main.c1229e93.js.map"
+    "main.d0cc0680.js.map": "/fashion-studio/static/js/main.d0cc0680.js.map"
   },
   "entrypoints": [
     "static/css/main.55eb493e.css",
-    "static/js/main.c1229e93.js"
+    "static/js/main.d0cc0680.js"
   ]
 }
