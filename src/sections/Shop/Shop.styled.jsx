@@ -77,7 +77,7 @@ export const Item = styled(motion.div)`
 
   img {
     width: 100%;
-    margin: auto;
+    height: auto;
     cursor: pointer;
   }
 
