@@ -3,17 +3,17 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { ShopSection, ShopTitle, Left, Right } from './Shop.styled';
 import { useRef, useLayoutEffect } from 'react';
-import { Item } from './Shop.styled';
+import ShopProduct from './ShopProduct';
 import img1 from '../../assets/Images/1.webp';
-
-const Product = ({ img, title = '' }) => {
-  return (
-    <Item>
-      <img src={img} alt={title} />
-      <h1>{title}</h1>
-    </Item>
-  );
-};
+import img2 from '../../assets/Images/2.webp';
+import img3 from '../../assets/Images/3.webp';
+import img4 from '../../assets/Images/4.webp';
+import img5 from '../../assets/Images/5.webp';
+import img6 from '../../assets/Images/6.webp';
+import img7 from '../../assets/Images/7.webp';
+import img8 from '../../assets/Images/8.webp';
+import img9 from '../../assets/Images/9.webp';
+import img10 from '../../assets/Images/10.webp';
 
 const Shop = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -43,7 +43,7 @@ const Shop = () => {
         // we have to increase scrolling height of this section same as the scrolling element width
 
         height: `${scrollingElement.scrollWidth}px`,
-        ease: 'none,',
+        ease: 'none',
       });
 
       // Horizontal Scrolling
@@ -60,9 +60,8 @@ const Shop = () => {
         // we have to increase scrolling height of this section same as the scrolling element width
 
         x: -pinWrapWidth,
-        ease: 'none,',
+        ease: 'none',
       });
-      console.log(element);
       ScrollTrigger.refresh();
     }, 1000);
 
@@ -90,19 +89,16 @@ const Shop = () => {
         </p>
       </Left>
       <Right ref={horizontalRef}>
-        <Product img={img1} title="xyz" />
-        <Product img={img1} title="xyz" />
-        <Product img={img1} title="xyz" />
-        <Product img={img1} title="xyz" />
-        <Product img={img1} title="xyz" />
-        <Product img={img1} title="xyz" />
-        <Product img={img1} title="xyz" />
-        <Product img={img1} title="xyz" />
-        <Product img={img1} title="xyz" />
-        <Product img={img1} title="xyz" />
-        <Product img={img1} title="xyz" />
-        <Product img={img1} title="xyz" />
-        <Product img={img1} title="xyz" />
+        <ShopProduct img={img1} title="Man Basics" />
+        <ShopProduct img={img2} title="Tops" />
+        <ShopProduct img={img3} title="Sweatshirts" />
+        <ShopProduct img={img4} title="Ethnic Wear" />
+        <ShopProduct img={img5} title="Blazers" />
+        <ShopProduct img={img6} title="Suits" />
+        <ShopProduct img={img7} title="Antiques" />
+        <ShopProduct img={img8} title="Jewellery" />
+        <ShopProduct img={img9} title="Watches" />
+        <ShopProduct img={img10} title="Special Edition" />
       </Right>
     </ShopSection>
   );

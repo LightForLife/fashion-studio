@@ -71,9 +71,13 @@ export const Right = styled.div`
 `;
 
 export const Item = styled(motion.div)`
-  display: inline-block;
   width: 20rem;
   margin-right: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   img {
     width: 100%;
@@ -82,6 +86,8 @@ export const Item = styled(motion.div)`
   }
 
   h1 {
+    display: inline-block;
+    width: fit-content;
     font-weight: 500;
     text-align: center;
     cursor: pointer;
