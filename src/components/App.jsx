@@ -8,7 +8,7 @@ import 'locomotive-scroll/dist/locomotive-scroll.css';
 import { AnimatePresence } from 'framer-motion';
 import About from 'sections/About/About';
 import Shop from 'sections/Shop/Shop';
-import ScrollTriggerProxy from './ScrollTriggerProxy.jsx/ScrollTriggerProxy';
+import ScrollTriggerProxy from './ScrollTriggerProxy/ScrollTriggerProxy';
 
 export const App = () => {
   const containerRef = useRef(null);

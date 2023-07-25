@@ -16,14 +16,14 @@ const ScrollTriggerProxy = () => {
     if (scroll) {
       const element = scroll?.el; // locomotive scrolling element, in our case it's app (main)
 
-      scroll.on('scroll', ScrollTrigger.update); // on scroll of locomotive, update scrolltrigger
+      scroll.on('scroll', ScrollTrigger.update); // on scroll of locomotive, update scrollTrigger
 
       // use scroller proxy
 
       ScrollTrigger.scrollerProxy(element, {
         scrollTop(value) {
           return arguments.length
-            ? scroll.scrollTo(value, { duration: 0, disableLerp: true })
+            ? scroll.scrollTo(value, 0, 0)
             : scroll.scroll.instance.scroll.y;
         }, // we don't have to define a scrollLeft because we're only scrolling vertically.
         getBoundingClientRect() {

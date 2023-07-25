@@ -1,8 +1,19 @@
 import React from 'react';
-import { gsap } from 'gsap';
+import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { ShopSection, ShopTitle, Left, Right } from './Shop.styled';
 import { useRef, useLayoutEffect } from 'react';
+import { Item } from './Shop.styled';
+import img1 from '../../assets/Images/1.webp';
+
+const Product = ({ img, title = '' }) => {
+  return (
+    <Item>
+      <img src={img} alt={title} />
+      <h1>{title}</h1>
+    </Item>
+  );
+};
 
 const Shop = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -51,7 +62,7 @@ const Shop = () => {
         x: -pinWrapWidth,
         ease: 'none,',
       });
-
+      console.log(element);
       ScrollTrigger.refresh();
     }, 1000);
 
@@ -79,22 +90,19 @@ const Shop = () => {
         </p>
       </Left>
       <Right ref={horizontalRef}>
-        <h1>img</h1>
-        <h1>img</h1>
-        <h1>img</h1>
-        <h1>img</h1>
-        <h1>img</h1>
-        <h1>img</h1>
-        <h1>img</h1>
-        <h1>img</h1>
-        <h1>img</h1>
-        <h1>img</h1>
-        <h1>img</h1>
-        <h1>img</h1>
-        <h1>img</h1>
-        <h1>img</h1>
-        <h1>img</h1>
-        <h1>img</h1>
+        <Product img={img1} title="xyz" />
+        <Product img={img1} title="xyz" />
+        <Product img={img1} title="xyz" />
+        <Product img={img1} title="xyz" />
+        <Product img={img1} title="xyz" />
+        <Product img={img1} title="xyz" />
+        <Product img={img1} title="xyz" />
+        <Product img={img1} title="xyz" />
+        <Product img={img1} title="xyz" />
+        <Product img={img1} title="xyz" />
+        <Product img={img1} title="xyz" />
+        <Product img={img1} title="xyz" />
+        <Product img={img1} title="xyz" />
       </Right>
     </ShopSection>
   );

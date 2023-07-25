@@ -1,10 +1,11 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const ShopSection = styled.section`
   min-height: 100vh;
   height: auto;
   width: 100vw;
-  /* overflow: hidden; */
+  overflow: hidden;
 
   display: flex;
   justify-content: flex-start;
@@ -66,5 +67,23 @@ export const Right = styled.div`
   h1 {
     width: 5rem;
     margin: 0 2rem;
+  }
+`;
+
+export const Item = styled(motion.div)`
+  display: inline-block;
+  width: 20rem;
+  margin-right: 6rem;
+
+  img {
+    width: 100%;
+    margin: auto;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
   }
 `;
