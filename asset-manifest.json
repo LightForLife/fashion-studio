@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/fashion-studio/static/css/main.55eb493e.css",
-    "main.js": "/fashion-studio/static/js/main.4ab5d55e.js",
+    "main.js": "/fashion-studio/static/js/main.c1229e93.js",
     "static/media/video.mp4": "/fashion-studio/static/media/video.3e396b6d837d0a1e8fb6.mp4",
     "static/media/2.webp": "/fashion-studio/static/media/2.574104ad442c095a5bbe.webp",
     "static/media/3.webp": "/fashion-studio/static/media/3.72b96ccc924a0b0d614d.webp",
@@ -13,10 +13,10 @@
     "static/media/kaushan-script-latin-ext-400-normal.woff2": "/fashion-studio/static/media/kaushan-script-latin-ext-400-normal.5a05e21384fe4b1b9db7.woff2",
     "index.html": "/fashion-studio/index.html",
     "main.55eb493e.css.map": "/fashion-studio/static/css/main.55eb493e.css.map",
-    "main.4ab5d55e.js.map": "/fashion-studio/static/js/main.4ab5d55e.js.map"
+    "main.c1229e93.js.map": "/fashion-studio/static/js/main.c1229e93.js.map"
   },
   "entrypoints": [
     "static/css/main.55eb493e.css",
-    "static/js/main.4ab5d55e.js"
+    "static/js/main.c1229e93.js"
   ]
 }
