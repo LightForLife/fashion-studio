@@ -33,11 +33,11 @@ const Shop = () => {
         scrollTrigger: {
           trigger: element,
           start: 'top top',
-          end: pinWrapWidth,
+          end: `${pinWrapWidth} bottom`,
           scroller: '.App', // locomotive element
-          scrub: true,
+          scrub: 1,
           pin: true,
-          markers: true,
+          // markers: true,
         },
 
         // we have to increase scrolling height of this section same as the scrolling element width
@@ -51,10 +51,10 @@ const Shop = () => {
         scrollTrigger: {
           trigger: scrollingElement,
           start: 'top top',
-          end: pinWrapWidth,
+          end: `${pinWrapWidth} bottom`,
           scroller: '.App', // locomotive element
-          scrub: true,
-          markers: true,
+          scrub: 1,
+          // markers: true,
         },
 
         // we have to increase scrolling height of this section same as the scrolling element width
@@ -65,7 +65,12 @@ const Shop = () => {
       ScrollTrigger.refresh();
     }, 1000);
 
-    return () => {};
+    ScrollTrigger.refresh();
+
+    return () => {
+      // t1.kill();
+      // ScrollTrigger.kill();
+    };
   }, []);
 
   return (

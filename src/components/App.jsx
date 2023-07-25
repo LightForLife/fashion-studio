@@ -26,14 +26,15 @@ export const App = () => {
           watch={[]}
           containerRef={containerRef}
         >
-          <ScrollTriggerProxy />
+          {' '}
           <AnimatePresence>
             <main className="App" data-scroll-container ref={containerRef}>
+              <ScrollTriggerProxy />
               <Home />
               <About />
               <Shop />
               <Banner />
-            </main>
+            </main>{' '}
           </AnimatePresence>
         </LocomotiveScrollProvider>
       </ThemeProvider>
