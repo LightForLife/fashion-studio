@@ -58,4 +58,5 @@ export const MenuBtn = styled.li`
 export const MenuItem = styled(motion.li)`
   text-transform: uppercase;
   color: ${props => props.theme.text};
+  cursor: pointer;
 `;

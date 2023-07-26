@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocomotiveScroll } from 'react-locomotive-scroll';
 import {
   FooterSection,
   LogoContainer,
@@ -8,6 +9,17 @@ import {
 import Logo from '../../assets/Svgs/star_white_48dp.svg';
 
 const Footer = () => {
+  const { scroll } = useLocomotiveScroll();
+
+  const handleScroll = id => {
+    let element = document.querySelector(id);
+
+    scroll.scrollTo(element, {
+      offset: '-10',
+      duration: '2000',
+      easing: [0.25, 0.0, 0.35, 1.0],
+    });
+  };
   return (
     <FooterSection>
       <LogoContainer>
@@ -23,10 +35,34 @@ const Footer = () => {
         transition={{ duration: 1.5 }}
       >
         <ul>
-          <li>home</li>
-          <li>about</li>
-          <li>shop</li>
-          <li>new arrivals</li>
+          <li
+            onClick={() => {
+              handleScroll('#home');
+            }}
+          >
+            home
+          </li>
+          <li
+            onClick={() => {
+              handleScroll('.about');
+            }}
+          >
+            about
+          </li>
+          <li
+            onClick={() => {
+              handleScroll('#shop');
+            }}
+          >
+            shop
+          </li>
+          <li
+            onClick={() => {
+              handleScroll('#new-arrival');
+            }}
+          >
+            new arrivals
+          </li>
           <li>
             <a href="https://google.com" target="_blank" rel="noreferrer">
               look book

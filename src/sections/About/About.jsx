@@ -7,7 +7,7 @@ import img3 from '../../assets/Images/3.webp';
 
 const About = () => {
   return (
-    <AboutSection id="fixed-target">
+    <AboutSection id="fixed-target" className="about">
       <AboutTitle
         data-scroll
         data-scroll-speed="-2"
