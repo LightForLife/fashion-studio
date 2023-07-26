@@ -19,11 +19,11 @@ const Shop = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const ref = useRef(null);
-  const horizontalRef = useRef(null);
+  const Horizontalref = useRef(null);
 
   useLayoutEffect(() => {
     let element = ref.current;
-    let scrollingElement = horizontalRef.current;
+    let scrollingElement = Horizontalref.current;
 
     let pinWrapWidth = scrollingElement.offsetWidth;
     let t1 = gsap.timeline();
@@ -93,7 +93,7 @@ const Shop = () => {
           country and look different.
         </p>
       </Left>
-      <Right ref={horizontalRef}>
+      <Right ref={Horizontalref}>
         <ShopProduct img={img1} title="Man Basics" />
         <ShopProduct img={img2} title="Tops" />
         <ShopProduct img={img3} title="Sweatshirts" />

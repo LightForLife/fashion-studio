@@ -1,14 +1,87 @@
 import React from 'react';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useRef, useLayoutEffect } from 'react';
 import {
   NewArrivalSection,
   NewArrivalOverlay,
   NewArrivalTitle,
   NewArrivalText,
+  NewArrivalContainer,
+  Item,
 } from './NewArrival.styled';
+import img1 from '../../assets/Images/11.webp';
+import img2 from '../../assets/Images/12.webp';
+import img3 from '../../assets/Images/13.webp';
+import img4 from '../../assets/Images/14.webp';
+
+const ShopProduct = ({ img, title = '' }) => {
+  return (
+    <Item>
+      <img src={img} alt={title} />
+      <h2>{title}</h2>
+    </Item>
+  );
+};
 
 const NewArrival = () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const ref = useRef(null);
+  const ScrollingRef = useRef(null);
+
+  useLayoutEffect(() => {
+    let element = ref.current;
+    let scrollingElement = ScrollingRef.current;
+
+    let t1 = gsap.timeline();
+
+    setTimeout(() => {
+      t1.to(element, {
+        scrollTrigger: {
+          trigger: element,
+          start: 'top top',
+          end: `bottom+=100% top-=100%`,
+          scroller: '.App', // locomotive element
+          scrub: 1,
+          pin: true,
+          markers: true,
+        },
+
+        // we have to increase scrolling height of this section same as the scrolling element width
+
+        ease: 'none',
+      });
+
+      // Vertical Scrolling
+      t1.fromTo(
+        scrollingElement,
+        { y: '0' },
+        {
+          y: '-100%',
+          scrollTrigger: {
+            trigger: scrollingElement,
+            start: 'top top',
+            end: `bottom+=100% top-=100%`,
+            scroller: '.App', // locomotive element
+            scrub: 1,
+            // markers: true,
+          },
+
+          // we have to increase scrolling height of this section same as the scrolling element width
+        }
+      );
+      ScrollTrigger.refresh();
+    }, 1000);
+
+    return () => {
+      // t1.kill();
+      // ScrollTrigger.kill();
+    };
+  }, []);
+
   return (
-    <NewArrivalSection>
+    <NewArrivalSection ref={ref}>
       <NewArrivalOverlay />
       <NewArrivalTitle
         data-scroll
@@ -17,11 +90,15 @@ const NewArrival = () => {
       >
         New Arrivals
       </NewArrivalTitle>
-      <NewArrivalText
-        data-scroll
-        data-scroll-sticky
-        data-scroll-target="#fixed-target"
-      >
+
+      <NewArrivalContainer ref={ScrollingRef}>
+        <ShopProduct img={img1} title="Man Basics" />
+        <ShopProduct img={img2} title="Tops" />
+        <ShopProduct img={img3} title="Sweatshirts" />
+        <ShopProduct img={img4} title="Ethnic Wear" />
+      </NewArrivalContainer>
+
+      <NewArrivalText data-scroll data-scroll-speed="-4">
         There is new collection available for cool clothes in all sizes. This
         collection is a great way to find a new look for you. It offers a
         variety of cool apparel styles to fit your taste, while you can also

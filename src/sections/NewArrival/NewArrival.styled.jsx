@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const NewArrivalSection = styled.section`
@@ -46,8 +47,38 @@ export const NewArrivalText = styled.div`
   font-size: ${props => props.theme.fontlg};
   font-weight: 300;
   position: absolute;
+  padding: 2rem;
   top: 0;
   right: 0;
-  padding: 2rem;
   z-index: 11;
+`;
+
+export const NewArrivalContainer = styled.div`
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 25vw;
+  height: auto;
+
+  /* width: 65%; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Item = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    z-index: 5;
+  }
 `;
