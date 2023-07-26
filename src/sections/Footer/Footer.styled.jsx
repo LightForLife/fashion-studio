@@ -66,7 +66,7 @@ export const FooterComponent = styled(motion.footer)`
 
 export const FooterBottom = styled.div`
   padding: 0.5rem 0;
-  margin: 0.4rem;
+  margin: 0 4rem;
   font-size: ${props => props.theme.fontlg};
 
   display: flex;
