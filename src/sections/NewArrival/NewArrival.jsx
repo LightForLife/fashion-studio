@@ -8,21 +8,12 @@ import {
   NewArrivalTitle,
   NewArrivalText,
   NewArrivalContainer,
-  Item,
 } from './NewArrival.styled';
+import NewArrivalProduct from './NewArrivalProduct';
 import img1 from '../../assets/Images/11.webp';
 import img2 from '../../assets/Images/12.webp';
 import img3 from '../../assets/Images/13.webp';
 import img4 from '../../assets/Images/14.webp';
-
-const ShopProduct = ({ img, title = '' }) => {
-  return (
-    <Item>
-      <img src={img} alt={title} />
-      <h2>{title}</h2>
-    </Item>
-  );
-};
 
 const NewArrival = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -48,8 +39,6 @@ const NewArrival = () => {
           //   markers: true,
         },
 
-        // we have to increase scrolling height of this section same as the scrolling element width
-
         ease: 'none',
       });
 
@@ -74,6 +63,8 @@ const NewArrival = () => {
       ScrollTrigger.refresh();
     }, 1000);
 
+    ScrollTrigger.refresh();
+
     return () => {
       tl.kill(true);
       ScrollTrigger.killAll(true);
@@ -92,10 +83,10 @@ const NewArrival = () => {
       </NewArrivalTitle>
 
       <NewArrivalContainer ref={ScrollingRef}>
-        <ShopProduct img={img1} title="Denim" />
-        <ShopProduct img={img2} title="Cool Dresses" />
-        <ShopProduct img={img3} title="Jackets" />
-        <ShopProduct img={img4} title="T-shirts" />
+        <NewArrivalProduct img={img1} title="Denim" />
+        <NewArrivalProduct img={img2} title="Cool Dresses" />
+        <NewArrivalProduct img={img3} title="Jackets" />
+        <NewArrivalProduct img={img4} title="T-shirts" />
       </NewArrivalContainer>
 
       <NewArrivalText data-scroll data-scroll-speed="-4">
