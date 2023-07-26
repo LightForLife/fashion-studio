@@ -10,6 +10,7 @@ import About from 'sections/About/About';
 import Shop from 'sections/Shop/Shop';
 import ScrollTriggerProxy from './ScrollTriggerProxy/ScrollTriggerProxy';
 import Banner from 'sections/Banner/Banner';
+import NewArrival from 'sections/NewArrival/NewArrival';
 
 export const App = () => {
   const containerRef = useRef(null);
@@ -34,6 +35,7 @@ export const App = () => {
               <About />
               <Shop />
               <Banner />
+              <NewArrival />
             </main>{' '}
           </AnimatePresence>
         </LocomotiveScrollProvider>
