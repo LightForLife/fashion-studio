@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const FooterSection = styled.section`
@@ -34,7 +35,7 @@ export const LogoContainer = styled.div`
   }
 `;
 
-export const FooterComponent = styled.footer`
+export const FooterComponent = styled(motion.footer)`
   width: 80vw;
 
   ul {

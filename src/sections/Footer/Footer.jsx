@@ -11,10 +11,17 @@ const Footer = () => {
   return (
     <FooterSection>
       <LogoContainer>
-        <img src={Logo} alt="Wibe Studio" />
-        <h3>Wibe Studio</h3>
+        <img data-scroll data-scroll-speed="2" src={Logo} alt="Wibe Studio" />
+        <h3 data-scroll data-scroll-speed="-1">
+          Wibe Studio
+        </h3>
       </LogoContainer>
-      <FooterComponent>
+      <FooterComponent
+        initial={{ y: '-400px' }}
+        whileInView={{ y: 0 }}
+        viewport={{ once: false }}
+        transition={{ duration: 1.5 }}
+      >
         <ul>
           <li>home</li>
           <li>about</li>
@@ -32,8 +39,18 @@ const Footer = () => {
           </li>
         </ul>
         <FooterBottom>
-          <span>&copy; {new Date().getFullYear()}. All Rights Reserved.</span>
-          <span>
+          <span
+            data-scroll
+            data-scroll-speed="2"
+            data-scroll-direction="horizontal"
+          >
+            &copy; {new Date().getFullYear()}. All Rights Reserved.
+          </span>
+          <span
+            data-scroll
+            data-scroll-speed="-2"
+            data-scroll-direction="horizontal"
+          >
             Made with &hearts; by &nbsp;
             <a href="https://google.com" target="_blank" rel="noreferrer">
               Artur
