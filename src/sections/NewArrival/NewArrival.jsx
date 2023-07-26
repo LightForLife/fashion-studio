@@ -62,7 +62,7 @@ const NewArrival = () => {
           scrollTrigger: {
             trigger: scrollingElement,
             start: 'top top',
-            end: `bottom+=100% top-=100%`,
+            end: `bottom top`,
             scroller: '.App', // locomotive element
             scrub: 1,
             // markers: true,
