@@ -1,12 +1,16 @@
 {
   "files": {
     "main.css": "/fashion-studio/static/css/main.55eb493e.css",
-    "main.js": "/fashion-studio/static/js/main.1813ae9c.js",
+    "main.js": "/fashion-studio/static/js/main.993fb62e.js",
     "static/media/video.mp4": "/fashion-studio/static/media/video.3e396b6d837d0a1e8fb6.mp4",
     "static/media/10.webp": "/fashion-studio/static/media/10.9d55ebaf49e2a1566285.webp",
+    "static/media/11.webp": "/fashion-studio/static/media/11.e32866d809309bfd5ae2.webp",
+    "static/media/14.webp": "/fashion-studio/static/media/14.353d062ffd6151d94a06.webp",
     "static/media/4.webp": "/fashion-studio/static/media/4.de6233805d060fa97921.webp",
     "static/media/2.webp": "/fashion-studio/static/media/2.574104ad442c095a5bbe.webp",
+    "static/media/12.webp": "/fashion-studio/static/media/12.7f6d60ec7261eb21a07c.webp",
     "static/media/6.webp": "/fashion-studio/static/media/6.4c1d4b9f18cf30ffbb05.webp",
+    "static/media/13.webp": "/fashion-studio/static/media/13.c41b47d2fe93d0ce16c4.webp",
     "static/media/5.webp": "/fashion-studio/static/media/5.85cb009545eed102084c.webp",
     "static/media/3.webp": "/fashion-studio/static/media/3.72b96ccc924a0b0d614d.webp",
     "static/media/7.webp": "/fashion-studio/static/media/7.cf43e4b0061d50fd7eb0.webp",
@@ -20,10 +24,10 @@
     "static/media/kaushan-script-latin-ext-400-normal.woff2": "/fashion-studio/static/media/kaushan-script-latin-ext-400-normal.5a05e21384fe4b1b9db7.woff2",
     "index.html": "/fashion-studio/index.html",
     "main.55eb493e.css.map": "/fashion-studio/static/css/main.55eb493e.css.map",
-    "main.1813ae9c.js.map": "/fashion-studio/static/js/main.1813ae9c.js.map"
+    "main.993fb62e.js.map": "/fashion-studio/static/js/main.993fb62e.js.map"
   },
   "entrypoints": [
     "static/css/main.55eb493e.css",
-    "static/js/main.1813ae9c.js"
+    "static/js/main.993fb62e.js"
   ]
 }
