@@ -34,10 +34,10 @@ const NewArrival = () => {
     let element = ref.current;
     let scrollingElement = ScrollingRef.current;
 
-    let t1 = gsap.timeline();
+    let tl = gsap.timeline();
 
     setTimeout(() => {
-      t1.to(element, {
+      tl.to(element, {
         scrollTrigger: {
           trigger: element,
           start: 'top top',
@@ -45,7 +45,7 @@ const NewArrival = () => {
           scroller: '.App', // locomotive element
           scrub: 1,
           pin: true,
-          markers: true,
+          //   markers: true,
         },
 
         // we have to increase scrolling height of this section same as the scrolling element width
@@ -54,7 +54,7 @@ const NewArrival = () => {
       });
 
       // Vertical Scrolling
-      t1.fromTo(
+      tl.fromTo(
         scrollingElement,
         { y: '0' },
         {
@@ -75,8 +75,8 @@ const NewArrival = () => {
     }, 1000);
 
     return () => {
-      // t1.kill();
-      // ScrollTrigger.kill();
+      tl.kill(true);
+      ScrollTrigger.killAll(true);
     };
   }, []);
 
@@ -92,10 +92,10 @@ const NewArrival = () => {
       </NewArrivalTitle>
 
       <NewArrivalContainer ref={ScrollingRef}>
-        <ShopProduct img={img1} title="Man Basics" />
-        <ShopProduct img={img2} title="Tops" />
-        <ShopProduct img={img3} title="Sweatshirts" />
-        <ShopProduct img={img4} title="Ethnic Wear" />
+        <ShopProduct img={img1} title="Denim" />
+        <ShopProduct img={img2} title="Cool Dresses" />
+        <ShopProduct img={img3} title="Jackets" />
+        <ShopProduct img={img4} title="T-shirts" />
       </NewArrivalContainer>
 
       <NewArrivalText data-scroll data-scroll-speed="-4">

@@ -26,10 +26,10 @@ const Shop = () => {
     let scrollingElement = Horizontalref.current;
 
     let pinWrapWidth = scrollingElement.offsetWidth;
-    let t1 = gsap.timeline();
+    let tl = gsap.timeline();
 
     setTimeout(() => {
-      t1.to(element, {
+      tl.to(element, {
         scrollTrigger: {
           trigger: element,
           start: 'top top',
@@ -47,7 +47,7 @@ const Shop = () => {
       });
 
       // Horizontal Scrolling
-      t1.to(scrollingElement, {
+      tl.to(scrollingElement, {
         scrollTrigger: {
           trigger: scrollingElement,
           start: 'top top',
@@ -68,8 +68,9 @@ const Shop = () => {
     ScrollTrigger.refresh();
 
     return () => {
-      // t1.kill();
-      // ScrollTrigger.kill();
+      tl.kill(true);
+      // tl.ScrollTrigger.kill(true);
+      ScrollTrigger.killAll(true);
     };
   }, []);
 
