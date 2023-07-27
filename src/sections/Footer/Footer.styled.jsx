@@ -31,17 +31,25 @@ export const LogoContainer = styled.div`
 
   h3 {
     font-family: 'Kaushan Script';
-    font-size: ${props => props.theme.fontxl};
+    font-size: ${props => props.theme.fontxxl};
+
+    @media (max-width: 48em) {
+      font-size: ${props => props.theme.fontxl};
+    }
   }
 `;
 
 export const FooterComponent = styled(motion.footer)`
   width: 80vw;
 
+  @media (max-width: 48em) {
+    width: 90vw;
+  }
+
   ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     margin: 2rem;
@@ -61,6 +69,11 @@ export const FooterComponent = styled(motion.footer)`
     &:hover {
       transform: scale(1.1);
     }
+
+    @media (max-width: 48em) {
+      padding: 1rem;
+      font-size: ${props => props.theme.fontmd};
+    }
   }
 `;
 
@@ -75,5 +88,20 @@ export const FooterBottom = styled.div`
 
   a {
     text-decoration: underline;
+  }
+
+  @media (max-width: 64em) {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    span {
+      margin: 0.2rem 0;
+      transform: none !important;
+    }
+  }
+
+  @media (max-width: 48em) {
+    font-size: ${props => props.theme.fontmd};
   }
 `;

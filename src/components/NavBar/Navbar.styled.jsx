@@ -13,21 +13,10 @@ export const NavContainer = styled(motion.div)`
   align-items: center;
 
   transition: all 0.3s ease;
-`;
 
-export const MenuItems = styled(motion.ul)`
-  position: relative;
-  height: ${props => props.theme.navHeight};
-  background-color: ${props => props.theme.body};
-  color: ${props => props.theme.text};
-  list-style: none;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  width: 100%;
-  padding: 0 10rem;
+  @media (max-width: 40em) {
+    top: ${props => (props.open ? '0' : `calc(-50vh - 4rem)`)};
+  }
 `;
 
 export const MenuBtn = styled.li`
@@ -53,10 +42,40 @@ export const MenuBtn = styled.li`
   text-transform: uppercase;
 
   cursor: pointer;
+
+  @media (max-width: 40em) {
+    width: 10rem;
+    height: 2rem;
+  }
+`;
+
+export const MenuItems = styled(motion.ul)`
+  position: relative;
+  height: ${props => props.theme.navHeight};
+  background-color: ${props => props.theme.body};
+  color: ${props => props.theme.text};
+  list-style: none;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  padding: 0 10rem;
+
+  @media (max-width: 40em) {
+    flex-direction: column;
+    padding: 2.1rem 0;
+    height: 50vh;
+  }
 `;
 
 export const MenuItem = styled(motion.li)`
   text-transform: uppercase;
   color: ${props => props.theme.text};
   cursor: pointer;
+
+  @media (max-width: 40em) {
+    padding: 0.5rem 0;
+  }
 `;

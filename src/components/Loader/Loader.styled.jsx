@@ -24,6 +24,12 @@ export const LoaderContainer = styled(motion.div)`
   background-color: ${props => props.theme.body};
   color: ${props => props.theme.text};
 
+  @media (max-width: 48em) {
+    svg {
+      width: 20vw;
+    }
+  }
+
   svg {
     width: 10vw;
     height: auto;
@@ -44,4 +50,8 @@ export const LoaderText = styled(motion.span)`
   font-size: ${props => props.theme.fontxl};
   color: ${props => props.theme.text};
   padding-top: 0.5rem;
+
+  /* @media (max-width: 48em) {
+    font-size: ${props => props.theme.fontlg};
+  } */
 `;
