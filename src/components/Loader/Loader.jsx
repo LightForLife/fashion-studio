@@ -1,6 +1,7 @@
 import React from 'react';
-import { LoaderContainer, LoaderText } from './Loader.styled';
 import { motion } from 'framer-motion';
+
+import { LoaderContainer, LoaderText } from './Loader.styled';
 
 const Loader = () => {
   const textVariants = {

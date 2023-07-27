@@ -1,9 +1,8 @@
 import React from 'react';
-import { VideoContainer } from './CoverVideo.styled';
-import MainVideo from '../../assets/video.mp4';
-import { DarkOverlay } from './CoverVideo.styled';
-import { HomeTitle } from './CoverVideo.styled';
 import { motion } from 'framer-motion';
+
+import { VideoContainer, DarkOverlay, HomeTitle } from './CoverVideo.styled';
+import MainVideo from '../../assets/video.mp4';
 
 const container = {
   hidden: { opacity: 0 },

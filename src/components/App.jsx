@@ -2,9 +2,10 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyles from 'styles/GlobalStyles';
 import { dark } from 'styles/Themes';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
-import { useRef, useState, useEffect } from 'react';
-import Home from '../sections/Home/Home';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
+import { useRef, useState, useEffect } from 'react';
+
+import Home from '../sections/Home/Home';
 import { AnimatePresence } from 'framer-motion';
 import About from 'sections/About/About';
 import Shop from 'sections/Shop/Shop';

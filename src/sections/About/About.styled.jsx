@@ -4,7 +4,6 @@ export const AboutSection = styled.section`
   position: relative;
   min-height: 100vh;
   width: 80vw;
-  overflow: hidden;
   display: flex;
 
   margin: 0 auto;
@@ -117,6 +116,7 @@ export const Right = styled.div`
     .small-img-2 {
       width: 30%;
       height: auto;
+      position: absolute;
       left: 60%;
       bottom: 20%;
     }

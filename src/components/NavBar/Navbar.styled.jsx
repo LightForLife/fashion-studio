@@ -65,7 +65,7 @@ export const MenuItems = styled(motion.ul)`
 
   @media (max-width: 40em) {
     flex-direction: column;
-    padding: 2.1rem 0;
+    padding: 2rem 0;
     height: 50vh;
   }
 `;

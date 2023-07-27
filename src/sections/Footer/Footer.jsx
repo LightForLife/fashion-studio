@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocomotiveScroll } from 'react-locomotive-scroll';
+
 import {
   FooterSection,
   LogoContainer,
@@ -88,7 +89,11 @@ const Footer = () => {
             data-scroll-direction="horizontal"
           >
             Made with &hearts; by &nbsp;
-            <a href="https://google.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/artur-levchenko/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Artur
             </a>
           </span>

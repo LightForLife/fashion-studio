@@ -1,8 +1,8 @@
 import React from 'react';
-import { LogoContainer } from './Logo.styled';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { LogoText } from './Logo.styled';
+
+import { LogoContainer, LogoText } from './Logo.styled';
 
 function Logo() {
   const textVariants = {

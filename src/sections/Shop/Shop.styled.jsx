@@ -4,7 +4,6 @@ import styled from 'styled-components';
 export const ShopSection = styled.section`
   min-height: 100vh;
   height: auto;
-  /* width: 80vw; */
   width: 100%;
   overflow: hidden;
 

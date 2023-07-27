@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { HomeSection } from './Home.styled';
 import CoverVideo from 'components/CoverVideo/CoverVideo';
 import Logo from 'components/Logo/Logo';

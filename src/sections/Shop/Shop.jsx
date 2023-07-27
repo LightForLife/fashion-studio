@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useRef, useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+
 import { ShopSection, ShopTitle, Left, Right } from './Shop.styled';
-import { useRef, useLayoutEffect } from 'react';
 import ShopProduct from './ShopProduct';
+
 import img1 from '../../assets/Images/1.webp';
 import img2 from '../../assets/Images/2.webp';
 import img3 from '../../assets/Images/3.webp';

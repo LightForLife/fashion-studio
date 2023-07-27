@@ -2,6 +2,7 @@ import React from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useRef, useLayoutEffect } from 'react';
+
 import {
   NewArrivalSection,
   NewArrivalOverlay,
@@ -10,6 +11,7 @@ import {
   NewArrivalContainer,
 } from './NewArrival.styled';
 import NewArrivalProduct from './NewArrivalProduct';
+
 import img1 from '../../assets/Images/11.webp';
 import img2 from '../../assets/Images/12.webp';
 import img3 from '../../assets/Images/13.webp';

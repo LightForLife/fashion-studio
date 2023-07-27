@@ -1,10 +1,7 @@
-import React from 'react';
-import { NavContainer } from './Navbar.styled';
-import { MenuBtn } from './Navbar.styled';
-import { MenuItems } from './Navbar.styled';
-import { MenuItem } from './Navbar.styled';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useLocomotiveScroll } from 'react-locomotive-scroll';
+
+import { NavContainer, MenuBtn, MenuItems, MenuItem } from './Navbar.styled';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,6 +1,6 @@
 import React from 'react';
-import { AboutSection, Left, Right } from './About.styled';
-import { AboutTitle } from './About.styled';
+import { AboutSection, AboutTitle, Left, Right } from './About.styled';
+
 import img1 from '../../assets/Images/1.webp';
 import img2 from '../../assets/Images/2.webp';
 import img3 from '../../assets/Images/3.webp';
