@@ -85,7 +85,6 @@ export const Right = styled.div`
   padding-left: 30%;
   min-height: 100vh;
   background-color: ${props => props.theme.grey};
-  /* width: 65%; */
 
   display: flex;
   justify-content: flex-start;
@@ -98,7 +97,7 @@ export const Right = styled.div`
 `;
 
 export const Item = styled(motion.div)`
-  width: 19rem;
+  width: 20rem;
   margin-right: 6rem;
 
   display: flex;
